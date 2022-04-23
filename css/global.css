@@ -1,0 +1,28 @@
+*{
+  
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+
+}
+
+.nav-heading,h3{
+    font-size: 33px;
+    font-weight: 300;
+    color: #393939;
+}
+a {
+    text-decoration: none;
+
+}
+h1,h2{
+    font-size: 60px;
+    font-weight: 300;
+}
+.icon{
+    min-width: 50px;
+    max-width: 120px;
+}

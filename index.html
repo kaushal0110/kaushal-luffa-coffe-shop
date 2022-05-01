@@ -8,20 +8,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/landing.css" />
     <title>Coffee Shop - Home</title>
   </head>
   <body>
     <header>
       <nav class="navigation">
-        <div class="logo">
-
-          <img
+        <img
           src="./assets/coffee-beans-logo-and-footer.svg"
           alt="coffee bean logo"
-          />
-          <h2 class="nav-heading">nitro</h2>
-        </div>
+        />
+        <h2 class="nav-heading">nitro</h2>
+
         <ul class="menu-items">
           <li><a href="./index.html">About</a></li>
           <li><a href="./pages/menu.html">Menu</a></li>
@@ -29,38 +27,62 @@
         </ul>
       </nav>
       <section class="header-section">
-
         <h1>Nitro Coffee</h1>
         <p>
           Coffee is a brewed drink prepared from roasted coffee beans, the seeds
           of berries from certain Coffee species.
         </p>
-        <button class="default"><a style="color: white;" href="./pages/menu.html">Shop Now</a></button>
+        <button class="default">
+          <a style="color: white" href="./pages/menu.html">Shop Now</a>
+        </button>
         <img src="./assets/coffeebeans-hero.png" alt="coffee bag" />
       </section>
     </header>
     <main>
-      <section>
+      <section class="products">
         <h2>Our Products</h2>
-        <article>
-          <img src="./assets/coffeebeans.png" alt="coffee beans" class="products-image" />
-          <h3>Coffee Beans</h3>
-          <p class="price">$18.99</p>
+        <article class="product">
+          <div class="card">
+            <img
+              src="./assets/coffeebeans.png"
+              alt="coffee beans"
+              class="products-image"
+            />
+            <h3>Coffee Beans</h3>
+            <p class="price">$18.99</p>
+          </div>
         </article>
-        <article>
-          <img src="./assets/coldbrew.png" alt="cold brew" class="products-image" />
-          <h3>cold brew</h3>
-          <p class="price">$4.99</p>
+        <article class="product">
+          <div class="card">
+            <img
+              src="./assets/coldbrew.png"
+              alt="cold brew"
+              class="products-image"
+            />
+            <h3>Cold Brew</h3>
+            <p class="price">$4.99</p>
+          </div>
         </article>
-        <article>
-          <img src="./assets/inhousebrew.png" alt="in-house brew" class="products-image" />
-          <h3>in-house brew</h3>
-          <p class="price">$2.99</p>
+        <article class="product">
+          <div class="card">
+            <img
+              src="./assets/inhousebrew.png"
+              alt="in-house brew"
+              class="products-image"
+            />
+            <h3>In-house Brew</h3>
+            <p class="price">$2.99</p>
+          </div>
         </article>
-        <button class="default"><a style="color: white;" href="./pages/menu.html">VIEW ALL</a></button>
+        <button class="default">
+          <a style="color: white" href="./pages/menu.html">VIEW ALL</a>
+        </button>
       </section>
       <section class="discount">
-        <p>Get 20% off your first order with code: <span class="code">FirstNitro</span></p>
+        <p>
+          Get 20% off your first order with code:
+          <span class="code">FirstNitro</span>
+        </p>
       </section>
     </main>
     <footer class="footer">
@@ -81,7 +103,7 @@
             <span class="footer-span">Saturday - Sunday:</span> 10am - 5pm
           </p>
         </div>
-        <div>
+        <div class="social">
           <h3>Social</h3>
           <img class="icon" src="./assets/Facebook-Icon.svg" alt="facebook" />
           <img class="icon" src="./assets/Yelp-Icon.svg" alt="yelp" />

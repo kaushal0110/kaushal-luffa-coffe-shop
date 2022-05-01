@@ -57,4 +57,9 @@
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
+  word-wrap: break-word;
+}
+.container{
+  width: 25%;
+  margin: auto;
 }

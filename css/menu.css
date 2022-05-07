@@ -6,6 +6,7 @@
   text-transform: uppercase;
   display: inline-block;
   width: 100%;
+  padding: 20px;
 }
 .menu__categories-container {
   width: 100%;
@@ -14,16 +15,14 @@
   margin: 0;
 }
 .menu__categories li {
-  padding: 20px;
   background-color: #393939;
   color: #fff;
   display: inline-block;
-  border-left: 4px solid #5bacc3;
-  padding: 20px;
-  margin: 20px;
 }
 .menu__categories a {
   color: #fff;
+  border-left: 4px solid #5bacc3;
+  padding: 10px 20px 10px 20px;
 }
 
 .menu__title-h1 {

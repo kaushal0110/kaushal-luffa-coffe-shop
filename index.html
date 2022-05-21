@@ -15,11 +15,14 @@
     <header>
       <nav class="navigation">
         <div class="navigation__logo">
-          <img
+          <a href="./index.html">
+
+            <img
             src="./assets/coffee-beans-logo-and-footer.svg"
             alt="coffee bean logo"
-          />
-          <h2 class="nav-heading">nitro</h2>
+            />
+            <h2 class="nav-heading">nitro</h2>
+          </a>
         </div>
         <ul class="navigation__menu">
           <a href="./index.html">About</a>
@@ -58,8 +61,23 @@
                 alt="coffee beans"
                 class="product__image"
               />
-              <h3>Coffee Beans</h3>
-              <p class="price">$18.99</p>
+              <div class="product__card-flex">
+                <span style="display: block">
+                  <h3 style="margin-top: 14px">Coffee Beans</h3>
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #909090;
+                      margin: 0;
+                      margin-left: 4px;
+                      text-align: left;
+                    "
+                  >
+                    Pack of 3
+                  </p>
+                </span>
+                <p class="price .price-index">$19</p>
+              </div>
             </div>
           </article>
           <article class="product">
@@ -69,8 +87,23 @@
                 alt="cold brew"
                 class="product__image"
               />
-              <h3>Cold Brew</h3>
-              <p class="price">$4.99</p>
+              <div class="product__card-flex">
+                <span style="display: block">
+                  <h3 style="margin-top: 14px">Cold Brew</h3>
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #909090;
+                      margin: 0;
+                      margin-left: 4px;
+                      text-align: left;
+                    "
+                  >
+                    1 can
+                  </p>
+                </span>
+                <p class="price .price-index">$5</p>
+              </div>
             </div>
           </article>
           <article class="product">
@@ -80,14 +113,45 @@
                 alt="in-house brew"
                 class="product__image"
               />
-              <h3>In-house Brew</h3>
-              <p class="price">$2.99</p>
+              <div class="product__card-flex">
+                <span style="display: block">
+                  <h3 style="margin-top: 14px">In-house Brew</h3>
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #909090;
+                      margin: 0;
+                      margin-left: 4px;
+                      text-align: left;
+                    "
+                  >
+                    1 cup
+                  </p>
+                </span>
+                <p class="price .price-index">$3</p>
+              </div>
             </div>
           </article>
         </div>
         <button class="default__button">
           <a style="color: white" href="./pages/menu.html">VIEW ALL</a>
         </button>
+      </section>
+      <section class="learn-more__section">
+        <div class="learn-more__content-text">
+          <h2>We're Different</h2>
+          <p>We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence</p>
+          <span class="learn-more__content-icons">
+            <img src="./assets/planting.svg" alt="icon">
+            <img src="./assets/coffee-beans.svg" alt="icon">
+            <img src="./assets/coffee-cup.svg" alt="icon">
+          </span>
+
+          <button class="default__button"><a href="./index.html">Learn More</a></button>
+        </div>
+        <div class="learn-more__content-img">
+          <div class="learn-more__content__img"></div>
+        </div>
       </section>
       <section class="discount__banner">
         <p>

@@ -1,0 +1,262 @@
+@use "./partials/global" as *;
+
+/* Header section */
+
+.header__section {
+  background-color: #fff0ed;
+  h1 {
+    font-size: 60px;
+    font-weight: 300;
+  }
+  &-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px 30px 120px;
+    &__container {
+      margin-top: 100px;
+      h1,
+      p,
+      button {
+        display: block;
+        margin-bottom: 30px;
+      }
+      &-content {
+        width: 370px;
+        margin: auto;
+        padding: 20px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+// .header__section h1 {
+//   font-size: 60px;
+//   font-weight: 300;
+// }
+
+// .header__section-content__container-content p {
+//   margin-bottom: 30px;
+// }
+
+.hero__section img {
+  margin-right: 120px;
+  padding-bottom: 20px;
+}
+
+/* products section */
+.product__image {
+  height: 240px;
+}
+.products__section {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+.product {
+  display: inline-block;
+  width: 33%;
+  &__card {
+    width: 350px;
+    height: 460px;
+    /* padding: 20px; */
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff;
+    img {
+      height: 240px;
+      display: block;
+      margin: auto;
+      padding: 20px;
+    }
+    p {
+      margin: 20px;
+      font-size: 21px;
+    }
+    &-flex {
+      width: 100%;
+      height: 170px;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fff0ed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-quantity {
+      font-size: 16px;
+      color: #909090;
+      margin: 0;
+      margin-left: 4px;
+      text-align: left;
+    }
+  }
+}
+
+/* learn more section */
+.learn-more__section {
+  width: 100%;
+  height: 575px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  padding-right: 160px;
+}
+.learn-more__content-text {
+  width: 30%;
+  padding-left: 80px;
+  h2,
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.learn-more__content-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  img {
+    width: 50px;
+  }
+}
+
+.learn-more__content-img {
+  height: 400px;
+  width: 400px;
+  background-image: url("../assets/coldbrewbackground.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::after {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    content: "";
+    display: block;
+    border: 5px solid #5bacc3;
+  }
+}
+.learn-more__content-img:hover .learn-more__content__img {
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.learn-more__content__img {
+  width: 155px;
+  height: 270px;
+  background-image: url("../assets/tiltedcan.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 2s infinite;
+}
+
+/* discount section */
+
+.discount__banner {
+  width: 100%;
+  height: 300px;
+  margin-top: 180px;
+  p {
+    width: 70%;
+    background-color: #393939;
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 50px;
+    margin: auto;
+
+    animation: background 2.5s infinite;
+  }
+}
+.discount__code {
+  font-weight: 700;
+}
+@keyframes background {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+/* footer section */
+
+.footer {
+  background-color: #fff0ed;
+  width: 100%;
+  height: 300px;
+}
+.footer-span {
+  font-weight: bold;
+}
+.address h3,
+.address p,
+.hours h3,
+.hours p,
+.social p {
+  margin: 20px 20px 30px 40px;
+  display: block;
+}
+.social h3 {
+  margin: 20px 20px 0px 40px;
+}
+.social {
+  margin: 20px 20px 0px 20px;
+  img {
+    display: inline-block;
+    width: fit-content;
+  }
+}
+
+.footer__container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.address,
+.hours,
+.social {
+  display: inline-block;
+}
+.footer__icons {
+  display: inline-block;
+  width: 100%;
+  margin-left: 20px;
+  padding: 15px 0px 20px 20px;
+}
+.footer__icons .footer__icons-icon {
+  width: 50px;
+}
+
+.product__container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
